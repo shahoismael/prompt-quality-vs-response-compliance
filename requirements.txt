@@ -1,0 +1,5 @@
+h5py>=3.8
+numpy>=1.24
+matplotlib>=3.7
+# official IFEval verifier:
+# pip install git+https://github.com/google-research/google-research.git#subdirectory=instruction_following_eval

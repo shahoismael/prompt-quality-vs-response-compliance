@@ -1,0 +1,1140 @@
+{
+  "summary": {
+    "n_items": 73,
+    "n_instructions": 116,
+    "prompt_level_strict_accuracy": 0.6027397260273972,
+    "prompt_level_loose_accuracy": 0.6301369863013698,
+    "instruction_level_strict_accuracy": 0.6810344827586207,
+    "instruction_level_loose_accuracy": 0.7155172413793104,
+    "unmatched_responses": 1,
+    "per_instruction_type": {
+      "change_case:capital_word_frequency": {
+        "n": 1,
+        "passed": 0,
+        "rate": 0.0
+      },
+      "change_case:english_capital": {
+        "n": 4,
+        "passed": 3,
+        "rate": 0.75
+      },
+      "change_case:english_lowercase": {
+        "n": 7,
+        "passed": 6,
+        "rate": 0.8571428571428571
+      },
+      "combination:repeat_prompt": {
+        "n": 6,
+        "passed": 2,
+        "rate": 0.3333333333333333
+      },
+      "combination:two_responses": {
+        "n": 7,
+        "passed": 5,
+        "rate": 0.7142857142857143
+      },
+      "detectable_content:number_placeholders": {
+        "n": 5,
+        "passed": 3,
+        "rate": 0.6
+      },
+      "detectable_content:postscript": {
+        "n": 2,
+        "passed": 2,
+        "rate": 1.0
+      },
+      "detectable_format:json_format": {
+        "n": 3,
+        "passed": 3,
+        "rate": 1.0
+      },
+      "detectable_format:multiple_sections": {
+        "n": 4,
+        "passed": 2,
+        "rate": 0.5
+      },
+      "detectable_format:number_bullet_lists": {
+        "n": 3,
+        "passed": 2,
+        "rate": 0.6666666666666666
+      },
+      "detectable_format:number_highlighted_sections": {
+        "n": 10,
+        "passed": 9,
+        "rate": 0.9
+      },
+      "detectable_format:title": {
+        "n": 5,
+        "passed": 5,
+        "rate": 1.0
+      },
+      "keywords:existence": {
+        "n": 7,
+        "passed": 6,
+        "rate": 0.8571428571428571
+      },
+      "keywords:forbidden_words": {
+        "n": 8,
+        "passed": 5,
+        "rate": 0.625
+      },
+      "keywords:frequency": {
+        "n": 3,
+        "passed": 1,
+        "rate": 0.3333333333333333
+      },
+      "keywords:letter_frequency": {
+        "n": 2,
+        "passed": 1,
+        "rate": 0.5
+      },
+      "language:response_language": {
+        "n": 3,
+        "passed": 3,
+        "rate": 1.0
+      },
+      "length_constraints:nth_paragraph_first_word": {
+        "n": 1,
+        "passed": 1,
+        "rate": 1.0
+      },
+      "length_constraints:number_paragraphs": {
+        "n": 3,
+        "passed": 1,
+        "rate": 0.3333333333333333
+      },
+      "length_constraints:number_sentences": {
+        "n": 8,
+        "passed": 0,
+        "rate": 0.0
+      },
+      "length_constraints:number_words": {
+        "n": 12,
+        "passed": 7,
+        "rate": 0.5833333333333334
+      },
+      "punctuation:no_comma": {
+        "n": 7,
+        "passed": 7,
+        "rate": 1.0
+      },
+      "startend:end_checker": {
+        "n": 3,
+        "passed": 3,
+        "rate": 1.0
+      },
+      "startend:quotation": {
+        "n": 2,
+        "passed": 2,
+        "rate": 1.0
+      }
+    }
+  },
+  "detail": [
+    {
+      "key": 2143,
+      "instruction_id_list": [
+        "keywords:forbidden_words",
+        "length_constraints:number_sentences"
+      ],
+      "strict": [
+        false,
+        false
+      ],
+      "loose": [
+        false,
+        false
+      ]
+    },
+    {
+      "key": 1375,
+      "instruction_id_list": [
+        "length_constraints:number_paragraphs",
+        "keywords:existence"
+      ],
+      "strict": [
+        true,
+        true
+      ],
+      "loose": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": 1667,
+      "instruction_id_list": [
+        "change_case:english_lowercase"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 2136,
+      "instruction_id_list": [
+        "detectable_content:number_placeholders"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 3130,
+      "instruction_id_list": [
+        "language:response_language"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 3376,
+      "instruction_id_list": [
+        "keywords:existence",
+        "punctuation:no_comma"
+      ],
+      "strict": [
+        true,
+        true
+      ],
+      "loose": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": 3434,
+      "instruction_id_list": [
+        "change_case:english_lowercase",
+        "length_constraints:nth_paragraph_first_word"
+      ],
+      "strict": [
+        true,
+        true
+      ],
+      "loose": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": 2751,
+      "instruction_id_list": [
+        "length_constraints:number_words",
+        "startend:quotation"
+      ],
+      "strict": [
+        true,
+        true
+      ],
+      "loose": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": 2311,
+      "instruction_id_list": [
+        "punctuation:no_comma"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 1922,
+      "instruction_id_list": [
+        "combination:repeat_prompt"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 2918,
+      "instruction_id_list": [
+        "combination:two_responses"
+      ],
+      "strict": [
+        false
+      ],
+      "loose": [
+        false
+      ]
+    },
+    {
+      "key": 1072,
+      "instruction_id_list": [
+        "length_constraints:number_words"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 2943,
+      "instruction_id_list": [
+        "keywords:frequency",
+        "change_case:english_lowercase",
+        "length_constraints:number_paragraphs"
+      ],
+      "strict": [
+        false,
+        true,
+        false
+      ],
+      "loose": [
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "key": 2284,
+      "instruction_id_list": [
+        "length_constraints:number_words",
+        "detectable_content:number_placeholders",
+        "detectable_format:number_bullet_lists"
+      ],
+      "strict": [
+        false,
+        false,
+        false
+      ],
+      "loose": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "key": 2622,
+      "instruction_id_list": [
+        "detectable_content:postscript"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 1537,
+      "instruction_id_list": [
+        "detectable_content:postscript"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 3682,
+      "instruction_id_list": [
+        "language:response_language"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 2853,
+      "instruction_id_list": [
+        "change_case:capital_word_frequency",
+        "detectable_format:title"
+      ],
+      "strict": [
+        false,
+        true
+      ],
+      "loose": [
+        false,
+        true
+      ]
+    },
+    {
+      "key": 251,
+      "instruction_id_list": [
+        "keywords:letter_frequency"
+      ],
+      "strict": [
+        false
+      ],
+      "loose": [
+        false
+      ]
+    },
+    {
+      "key": 1548,
+      "instruction_id_list": [
+        "detectable_format:multiple_sections"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 1233,
+      "instruction_id_list": [
+        "startend:end_checker",
+        "keywords:frequency"
+      ],
+      "strict": [
+        true,
+        false
+      ],
+      "loose": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": 2475,
+      "instruction_id_list": [
+        "startend:end_checker"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 1779,
+      "instruction_id_list": [
+        "change_case:english_capital",
+        "keywords:existence"
+      ],
+      "strict": [
+        true,
+        true
+      ],
+      "loose": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": 2515,
+      "instruction_id_list": [
+        "detectable_format:number_highlighted_sections"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 2765,
+      "instruction_id_list": [
+        "change_case:english_lowercase",
+        "detectable_content:number_placeholders"
+      ],
+      "strict": [
+        true,
+        true
+      ],
+      "loose": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": 1902,
+      "instruction_id_list": [
+        "startend:end_checker"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 3442,
+      "instruction_id_list": [
+        "length_constraints:number_words",
+        "detectable_format:title"
+      ],
+      "strict": [
+        true,
+        true
+      ],
+      "loose": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": 3680,
+      "instruction_id_list": [
+        "keywords:frequency",
+        "detectable_format:number_highlighted_sections"
+      ],
+      "strict": [
+        true,
+        true
+      ],
+      "loose": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": 13,
+      "instruction_id_list": [
+        "detectable_format:json_format"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 2811,
+      "instruction_id_list": [
+        "keywords:forbidden_words"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 3518,
+      "instruction_id_list": [
+        "detectable_format:json_format",
+        "keywords:existence"
+      ],
+      "strict": [
+        true,
+        false
+      ],
+      "loose": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": 2759,
+      "instruction_id_list": [
+        "detectable_format:number_highlighted_sections"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 1148,
+      "instruction_id_list": [
+        "detectable_format:json_format"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 1793,
+      "instruction_id_list": [
+        "combination:two_responses",
+        "length_constraints:number_words"
+      ],
+      "strict": [
+        true,
+        true
+      ],
+      "loose": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": 2577,
+      "instruction_id_list": [
+        "combination:two_responses",
+        "keywords:forbidden_words"
+      ],
+      "strict": [
+        true,
+        true
+      ],
+      "loose": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": 3386,
+      "instruction_id_list": [
+        "keywords:forbidden_words",
+        "keywords:existence"
+      ],
+      "strict": [
+        true,
+        true
+      ],
+      "loose": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": 374,
+      "instruction_id_list": [
+        "combination:repeat_prompt",
+        "keywords:forbidden_words"
+      ],
+      "strict": [
+        false,
+        false
+      ],
+      "loose": [
+        false,
+        true
+      ]
+    },
+    {
+      "key": 3224,
+      "instruction_id_list": [
+        "combination:repeat_prompt"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 1021,
+      "instruction_id_list": [
+        "change_case:english_capital",
+        "detectable_format:multiple_sections"
+      ],
+      "strict": [
+        false,
+        true
+      ],
+      "loose": [
+        false,
+        true
+      ]
+    },
+    {
+      "key": 1436,
+      "instruction_id_list": [
+        "change_case:english_lowercase",
+        "keywords:forbidden_words"
+      ],
+      "strict": [
+        true,
+        false
+      ],
+      "loose": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": 1162,
+      "instruction_id_list": [
+        "punctuation:no_comma"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 2909,
+      "instruction_id_list": [
+        "detectable_format:number_highlighted_sections",
+        "length_constraints:number_words"
+      ],
+      "strict": [
+        true,
+        true
+      ],
+      "loose": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": 2844,
+      "instruction_id_list": [
+        "detectable_format:number_highlighted_sections",
+        "length_constraints:number_words"
+      ],
+      "strict": [
+        true,
+        false
+      ],
+      "loose": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": 2925,
+      "instruction_id_list": [
+        "detectable_format:multiple_sections"
+      ],
+      "strict": [
+        false
+      ],
+      "loose": [
+        false
+      ]
+    },
+    {
+      "key": 3305,
+      "instruction_id_list": [
+        "language:response_language",
+        "combination:repeat_prompt",
+        "keywords:existence"
+      ],
+      "strict": [
+        true,
+        false,
+        true
+      ],
+      "loose": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "key": 3456,
+      "instruction_id_list": [
+        "detectable_format:number_highlighted_sections",
+        "change_case:english_capital"
+      ],
+      "strict": [
+        true,
+        true
+      ],
+      "loose": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": 1392,
+      "instruction_id_list": [
+        "detectable_format:title",
+        "length_constraints:number_sentences",
+        "length_constraints:number_words"
+      ],
+      "strict": [
+        true,
+        false,
+        false
+      ],
+      "loose": [
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "key": 136,
+      "instruction_id_list": [
+        "detectable_format:number_bullet_lists",
+        "length_constraints:number_words"
+      ],
+      "strict": [
+        true,
+        true
+      ],
+      "loose": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": 1593,
+      "instruction_id_list": [
+        "change_case:english_lowercase"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 357,
+      "instruction_id_list": [
+        "detectable_format:multiple_sections"
+      ],
+      "strict": [
+        false
+      ],
+      "loose": [
+        false
+      ]
+    },
+    {
+      "key": 2617,
+      "instruction_id_list": [
+        "length_constraints:number_sentences"
+      ],
+      "strict": [
+        false
+      ],
+      "loose": [
+        false
+      ]
+    },
+    {
+      "key": 3315,
+      "instruction_id_list": [
+        "length_constraints:number_paragraphs",
+        "keywords:forbidden_words"
+      ],
+      "strict": [
+        false,
+        true
+      ],
+      "loose": [
+        false,
+        true
+      ]
+    },
+    {
+      "key": 3350,
+      "instruction_id_list": [
+        "punctuation:no_comma",
+        "detectable_content:number_placeholders"
+      ],
+      "strict": [
+        true,
+        true
+      ],
+      "loose": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": 3287,
+      "instruction_id_list": [
+        "combination:two_responses",
+        "length_constraints:number_words"
+      ],
+      "strict": [
+        false,
+        false
+      ],
+      "loose": [
+        false,
+        false
+      ]
+    },
+    {
+      "key": 2097,
+      "instruction_id_list": [
+        "detectable_format:title"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 332,
+      "instruction_id_list": [
+        "combination:repeat_prompt",
+        "length_constraints:number_words"
+      ],
+      "strict": [
+        false,
+        true
+      ],
+      "loose": [
+        false,
+        true
+      ]
+    },
+    {
+      "key": 2571,
+      "instruction_id_list": [
+        "change_case:english_capital",
+        "punctuation:no_comma",
+        "length_constraints:number_sentences"
+      ],
+      "strict": [
+        true,
+        true,
+        false
+      ],
+      "loose": [
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "key": 1286,
+      "instruction_id_list": [
+        "detectable_format:number_bullet_lists"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 1886,
+      "instruction_id_list": [
+        "detectable_format:number_highlighted_sections"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 3221,
+      "instruction_id_list": [
+        "detectable_content:number_placeholders"
+      ],
+      "strict": [
+        false
+      ],
+      "loose": [
+        false
+      ]
+    },
+    {
+      "key": 3150,
+      "instruction_id_list": [
+        "change_case:english_lowercase"
+      ],
+      "strict": [
+        false
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 2028,
+      "instruction_id_list": [
+        "keywords:forbidden_words"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 2229,
+      "instruction_id_list": [
+        "detectable_format:title"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 247,
+      "instruction_id_list": [
+        "combination:two_responses"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    },
+    {
+      "key": 292,
+      "instruction_id_list": [
+        "length_constraints:number_sentences"
+      ],
+      "strict": [
+        false
+      ],
+      "loose": [
+        false
+      ]
+    },
+    {
+      "key": 2381,
+      "instruction_id_list": [
+        "detectable_format:number_highlighted_sections"
+      ],
+      "strict": [
+        false
+      ],
+      "loose": [
+        false
+      ]
+    },
+    {
+      "key": 1216,
+      "instruction_id_list": [
+        "startend:quotation",
+        "length_constraints:number_words"
+      ],
+      "strict": [
+        true,
+        false
+      ],
+      "loose": [
+        true,
+        false
+      ]
+    },
+    {
+      "key": 2912,
+      "instruction_id_list": [
+        "combination:two_responses",
+        "keywords:letter_frequency"
+      ],
+      "strict": [
+        true,
+        true
+      ],
+      "loose": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": 3281,
+      "instruction_id_list": [
+        "combination:two_responses",
+        "punctuation:no_comma"
+      ],
+      "strict": [
+        true,
+        true
+      ],
+      "loose": [
+        true,
+        true
+      ]
+    },
+    {
+      "key": 2139,
+      "instruction_id_list": [
+        "length_constraints:number_sentences",
+        "keywords:existence"
+      ],
+      "strict": [
+        false,
+        true
+      ],
+      "loose": [
+        false,
+        true
+      ]
+    },
+    {
+      "key": 3089,
+      "instruction_id_list": [
+        "detectable_format:number_highlighted_sections",
+        "length_constraints:number_sentences",
+        "length_constraints:number_sentences"
+      ],
+      "strict": [
+        true,
+        false,
+        false
+      ],
+      "loose": [
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "key": 1546,
+      "instruction_id_list": [
+        "combination:repeat_prompt",
+        "punctuation:no_comma"
+      ],
+      "strict": [
+        false,
+        true
+      ],
+      "loose": [
+        false,
+        true
+      ]
+    },
+    {
+      "key": 1646,
+      "instruction_id_list": [
+        "detectable_format:number_highlighted_sections"
+      ],
+      "strict": [
+        true
+      ],
+      "loose": [
+        true
+      ]
+    }
+  ]
+}

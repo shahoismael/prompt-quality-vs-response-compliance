@@ -1,0 +1,37 @@
+# manuscript and submission material — not published here
+*.docx
+*.doc
+*.pdf
+submission/
+final/
+final-sub-*/
+R3-Citation/
+*.ris
+
+# MATLAB build artefacts
+*.exe
+*.asv
+*.mex*
+slprj/
+mccExcludedFiles.log
+includedSupportPackages.txt
+requiredMCRProducts.txt
+unresolvedSymbols.txt
+buildresult.json
+
+# licence-restricted corpora — NEVER commit (see README > Data)
+data/wildchat_filtered.json
+data/lmsys_filtered.json
+data/master_benchmark.json
+results/simulation_results_main500_v2.mat
+results/baseline_results_v2.mat
+results/simulation_results*.mat
+results/*_v1*.mat
+
+# checkpoints and scratch
+results/*.partial
+results/smoke.mat
+*.tmp
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
