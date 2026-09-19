@@ -1,5 +1,5 @@
 # Prompt Quality vs Response Compliance
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22849706.svg)](https://doi.org/10.5281/zenodo.22849706)
 Code, data and results for a study measuring prompt quality and response compliance as separate constructs, using a locally hosted open-weights LLM judge on consumer hardware.
 
 **Headline result.** Independently measured prompt quality does not predict response compliance when compliance is scored against prompt-independent criteria (ρ = 0.014, 90% CI [−0.062, 0.090], TOST *p* = .031, n = 498). Response quality is not a proxy for prompting skill.
