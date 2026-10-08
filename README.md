@@ -112,6 +112,14 @@ Every reported statistic in the paper is recomputable from these two CSVs. `S_ca
 
 The full `.mat` run files contain the source prompts and are therefore withheld for the licence reasons above. They are available from the authors for verification, subject to the requester holding their own dataset agreements.
 
+## Authors
+
+| | Affiliation | ORCID |
+|---|---|---|
+| Shaho Ismael Hassen | Department of Chemical and Petrochemical Engineering, College of Engineering, Salahaddin University-Erbil | [0000-0002-6403-7748](https://orcid.org/0000-0002-6403-7748) |
+| Ahmed Abdulfatah Abdlrazaq | Directorate of Information Technology, Salahaddin University-Erbil | [0000-0002-3054-045X](https://orcid.org/0000-0002-3054-045X) |
+| Ekhlas Mohammed Noori | Department of Software Engineering, College of Engineering, Salahaddin University-Erbil | [0009-0000-8998-3741](https://orcid.org/0009-0000-8998-3741) |
+
 ## Citation
 
 Archived on Zenodo under the concept DOI [10.5281/zenodo.22849706](https://doi.org/10.5281/zenodo.22849706), which always resolves to the latest version.
