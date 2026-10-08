@@ -1,8 +1,10 @@
-# Prompt Quality vs Response Compliance
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22849706.svg)](https://doi.org/10.5281/zenodo.22849706)
-Code, data and results for a study measuring prompt quality and response compliance as separate constructs, using a locally hosted open-weights LLM judge on consumer hardware.
+# Response Compliance Confounds Prompt Quality in LLM-as-a-Judge Scoring
 
-**Headline result.** Independently measured prompt quality does not predict response compliance when compliance is scored against prompt-independent criteria (ρ = 0.014, 90% CI [−0.062, 0.090], TOST *p* = .031, n = 498). Response quality is not a proxy for prompting skill.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22849706.svg)](https://doi.org/10.5281/zenodo.22849706)
+
+Code, data and results for a study that measures prompt quality and response compliance as separate constructs, using a locally hosted open-weights LLM judge on consumer hardware.
+
+**Headline result.** Independently measured prompt quality does not predict response compliance when compliance is scored against prompt-independent criteria (ρ = 0.014, 90% CI [−0.062, 0.090], TOST *p* = .031, n = 498). What the prompt-derived compliance score does track is response length, which explains 25.6% of its variance against 0.76% for prompt quality. The effect belongs to the extracted criteria rather than the judge: the same model scoring the same responses against a fixed rubric shows 3.5%. Response quality is not a proxy for prompting skill.
 
 The manuscript is not in this repository.
 
@@ -109,6 +111,12 @@ Both naturalistic corpora retain hashed IP addresses and coarse geographic metad
 Every reported statistic in the paper is recomputable from these two CSVs. `S_cal` is the length-corrected score after the response screen; `kept = 0` marks the two items the screen removes.
 
 The full `.mat` run files contain the source prompts and are therefore withheld for the licence reasons above. They are available from the authors for verification, subject to the requester holding their own dataset agreements.
+
+## Citation
+
+Archived on Zenodo under the concept DOI [10.5281/zenodo.22849706](https://doi.org/10.5281/zenodo.22849706), which always resolves to the latest version.
+
+The per-item numeric results are also published as a dataset: [huggingface.co/datasets/shahoismael/prompt-quality-vs-response-compliance](https://huggingface.co/datasets/shahoismael/prompt-quality-vs-response-compliance)
 
 ## Licence
 
