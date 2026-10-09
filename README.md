@@ -1,6 +1,7 @@
 # Response Compliance Confounds Prompt Quality in LLM-as-a-Judge Scoring
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22849706.svg)](https://doi.org/10.5281/zenodo.22849706)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23268018.svg)](https://doi.org/10.5281/zenodo.23268018)
+[![Hugging Face dataset](https://img.shields.io/badge/Hugging%20Face-dataset-yellow)](https://huggingface.co/datasets/shahoismael/prompt-quality-vs-response-compliance)
 
 Code, data and results for a study that measures prompt quality and response compliance as separate constructs, using a locally hosted open-weights LLM judge on consumer hardware.
 
@@ -49,10 +50,17 @@ run_simulation(500, 'results/simulation_results_main500_v2.mat')   % ~58 h CPU
 run_baseline('results/simulation_results_main500_v2.mat', ...
              'results/baseline_results_v2.mat', 120)
 validate_construct
+validate_graded                                  % graded construct validation
+check_graded_manipulation                        % manipulation check, no model calls
 analyze_ablation('results/simulation_results_main500_v2.mat', ...
                  'results/baseline_results_v2.mat')
+run_ablation_factorial                           % factorial arms, ~30 h CPU, resumable
+export_factorial                                 % writes results/ablation_factorial_120.csv
 make_figs_data
+make_fig_graded
 ```
+
+`run_ablation_factorial` saves a checkpoint after every item. If the run stops, run the same command again and it continues from the last finished item.
 
 ```bash
 python scripts/verify_ifeval.py            # official IFEval verification
@@ -104,11 +112,13 @@ Both naturalistic corpora retain hashed IP addresses and coarse geographic metad
 |---|---|
 | `main_run_500.csv` | Main run, one row per item: prompt hash, both prompt-quality composites, all three compliance measures, bias variance, routing counts, latency, screen flag |
 | `baseline_120.csv` | Naive and chain-of-thought baselines on the aligned subsample, keyed to `main_run_idx` |
+| `ablation_factorial_120.csv` | Factorial arms on the same subsample: naive judge averaged over three samples, and single-pass judge against the extracted criteria, keyed to `main_run_idx` |
+| `graded_validation.mat` | Graded construct validation, 80 IFEval prompts at 0, 1 and 2 constraint sentences removed |
 | `construct_validation.mat` | Known-groups validation, 100 paired prompts, numeric only |
 | `ifeval_verified.json` | Official verification output, per-item and per-instruction-type |
 | `ifeval_responses.jsonl` | Generated responses for the IFEval subset (IFEval is Apache 2.0) |
 
-Every reported statistic in the paper is recomputable from these two CSVs. `S_cal` is the length-corrected score after the response screen; `kept = 0` marks the two items the screen removes.
+Every reported statistic in the paper is recomputable from these three CSVs and the two validation files. `S_cal` is the length-corrected score after the response screen; `kept = 0` marks the two items the screen removes.
 
 The full `.mat` run files contain the source prompts and are therefore withheld for the licence reasons above. They are available from the authors for verification, subject to the requester holding their own dataset agreements.
 
@@ -122,7 +132,9 @@ The full `.mat` run files contain the source prompts and are therefore withheld 
 
 ## Citation
 
-Archived on Zenodo under the concept DOI [10.5281/zenodo.22849706](https://doi.org/10.5281/zenodo.22849706), which always resolves to the latest version.
+This version (v1.2.0), as cited in the paper: [10.5281/zenodo.23268018](https://doi.org/10.5281/zenodo.23268018).
+
+All versions: concept DOI [10.5281/zenodo.22849706](https://doi.org/10.5281/zenodo.22849706), which always resolves to the latest version.
 
 The per-item numeric results are also published as a dataset: [huggingface.co/datasets/shahoismael/prompt-quality-vs-response-compliance](https://huggingface.co/datasets/shahoismael/prompt-quality-vs-response-compliance)
 
