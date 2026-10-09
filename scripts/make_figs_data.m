@@ -1,14 +1,17 @@
 function make_figs_data(sim_name, base_name, out_dir)
-% Figures 2, 3, 4 for the manuscript. RUN FROM THE PROJECT ROOT.
+% Figures 3, 4, 5 for the manuscript. RUN FROM THE PROJECT ROOT.
 %
 %   make_figs_data('results/simulation_results_main500_v2.mat', ...
 %                  'results/baseline_results_v2.mat', ...
-%                  'D:\claude_projects\R3\final-sub-25-30-aug-2026\figs')
+%                  'D:\claude_projects\R3\1-Natural Language-Processing-(Cambridge)\figs')
+%
+% Cambridge artwork guide: 600 dpi combination artwork, 9 pt labels,
+% file names of the form <first author surname>Fig<n>.
 
     if nargin < 1 || isempty(sim_name),  sim_name  = 'results/simulation_results_main500_v2.mat'; end
     if nargin < 2 || isempty(base_name), base_name = 'results/baseline_results_v2.mat'; end
     if nargin < 3 || isempty(out_dir)
-        out_dir = 'D:\claude_projects\R3\final-sub-25-30-aug-2026\figs';
+        out_dir = 'D:\claude_projects\R3\1-Natural Language-Processing-(Cambridge)\figs';
     end
     if ~isfolder(out_dir), mkdir(out_dir); end
 
@@ -68,7 +71,7 @@ function make_figs_data(sim_name, base_name, out_dir)
     panel(2, Q, Scl, 'Prompt-derived criteria', ...
         'Extracted-criteria compliance $S_{\mathrm{cal}}$', C.cot, FS);
 
-    exportfig(f, out_dir, 'Figure2_divergence');
+    exportfig(f, out_dir, 'HassenFig3');
 
     %% ---------------- Figure 3: score distributions ----------------
     f = newfig(17.8, 7.0);
@@ -93,7 +96,7 @@ function make_figs_data(sim_name, base_name, out_dir)
         set(gca, 'FontSize', FS, 'Box', 'off', 'TickDir', 'out', 'Layer', 'top');
         hold off;
     end
-    exportfig(f, out_dir, 'Figure3_score_distributions');
+    exportfig(f, out_dir, 'HassenFig5');
 
     %% ---------------- Figure 4: bias variance + ceiling ----------------
     % A log axis would silently drop every item whose bias variance is exactly
@@ -157,9 +160,9 @@ function make_figs_data(sim_name, base_name, out_dir)
     set(gca, 'FontSize', FS, 'Box', 'off', 'TickDir', 'out');
     hold off;
 
-    exportfig(f, out_dir, 'Figure4_bias_variance');
+    exportfig(f, out_dir, 'HassenFig6');
 
-    fprintf('Figures 2-4 written to %s\n', out_dir);
+    fprintf('Figures 3, 5 and 6 written to %s\n', out_dir);
 end
 
 % ===================== helpers =====================
